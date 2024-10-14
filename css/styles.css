@@ -136,3 +136,119 @@ header a {
   top: 200px;
   left: 30px;
 }
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    height: 1024px;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../images/background-image/vegetables-mobile.jpg);
+  }
+
+  .header-list {
+    width: 100%;
+  }
+
+  .header-svg {
+    left: 30px;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+  }
+
+  .green-harvest {
+    left: 40px;
+  }
+
+  .page-menu-list {
+    display: none;
+  }
+
+  .title {
+    max-width: 335px;
+    width: 100%;
+    height: 192px;
+    font-size: 48px;
+    line-height: 48px;
+    top: 40px;
+  }
+
+  .text {
+    max-width: 335px;
+    width: 100%;
+    height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    top: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    width: 100%;
+  }
+
+  .header {
+    width: 100%;
+    height: 1024px;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../images/background-image/vegetables-tablet.jpg);
+  }
+
+  .header-list {
+    width: 100%;
+  }
+
+  .header-svg {
+    left: 30px;
+  }
+
+  .menu-tablet {
+    display: flex;
+    position: absolute;
+    right: 30px;
+    top: 32px;
+  }
+
+  .green-harvest {
+    left: 40px;
+  }
+
+  .page-menu-list {
+    display: none;
+  }
+
+  .title {
+    max-width: 704px;
+    width: 100%;
+    height: 228px;
+    font-size: 76px;
+    line-height: 76px;
+    top: 40px;
+  }
+
+  .text {
+    max-width: 603px;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    top: 70px;
+  }
+}
