@@ -1,256 +1,254 @@
-
-.advertisement {
-  padding: 100px;
-  gap: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.ads {
-  font-family: Inter Tight;
-  font-size: 48px;
-  font-weight: 600;
-  line-height: 50px;
-  letter-spacing: -0.015em;
-  text-align: left;
-  text-transform: uppercase;
-  width: 1054px;
-  left: 13px;
-  min-width: 355px;
-}
-
-.discount {
-  color: #fbfbfb;
-  background-color: #576f35;
-  border-radius: 12px;
-  padding: 0 10px 0 10px;
-  display: block;
-}
-
-.ads-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* for Tablet */
-@media screen and (min-width: 768px) and (max-width: 1280px) {
-  .advertisement {
-    padding: 100px 16px 100px 16px;
-  }
-  .ads {
-    font-size: 64px;
-    line-height: 70px;
-    min-width: 736px;
-  }
-}
-
-/* for Desktop */
-@media screen and (min-width: 1280px) {
-  .advertisement {
-    padding: 80px 10px 80px 10px;
-  }
-  .ads {
-    font-size: 76px;
-    line-height: 80px;
-    min-width: 1080px;
-  }
-  .discount {
-    display: inline;
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-body {
-  max-width: 100%;
-  font-family: "Inter Tight", sans-serif;
-  color: #fbfbfb;
-  font-weight: 500;
-  line-height: 1.29;
-  margin: 0;
-  background-color: #7a3145;
-  min-height: 100vh;
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
-p {
-  margin: 0;
-}
+p,
+ol,
 ul,
-ol {
-  list-style-type: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
-img {
-  display: block;
-  object-fit: cover;
+
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Inter Tight", sans-serif;
+}
+
+.container {
+  max-width: 1280px;
   width: 100%;
-  height: auto;
-}
-.reviews-container {
-  max-width: 375px;
   margin: 0 auto;
-  padding: 0 20px;
-}
-.reviews {
-  padding: 80px 0;
-  background-color: #fbfbfb;
-}
-.reviews-title-text {
-  margin-bottom: 40px;
-}
-.reviews-title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 1.04;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
-  color: rgba(20, 20, 20, 1);
-  margin-bottom: 20px;
-  text-align: left;
-}
-.reviews-text {
-  color: rgba(20, 20, 20, 1);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.3;
-}
-.color-text {
-  color: #576f35;
-}
-.reviews-list {
-  display: flex;
-  justify-content: center;
-}
-.reviews-item {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid rgba(122, 49, 69, 0.3);
-  border-radius: 24px;
   align-items: center;
-  padding: 20px 16px;
 }
-.reviews-item:nth-child(2),
-.reviews-item:nth-child(3) {
+
+header a {
+  text-decoration: none;
+}
+
+.header {
+  width: 1280px;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(20, 20, 20, 0.2),
+      rgba(20, 20, 20, 0.2)
+    ),
+    url(../images/background-image/vegetables.jpg);
+}
+
+.header-svg {
+  position: relative;
+  left: 75px;
+  top: 40px;
+}
+
+.menu-mobile {
   display: none;
-  align-items: center;
 }
-.reviews-picture {
-  margin: 0 auto;
-  margin-bottom: 24px;
-  width: 56px;
-  height: 56px;
+
+.menu-tablet {
+  display: none;
 }
-.container-title-text-person {
-  padding: 0 7px;
+
+.header-list {
+  display: flex;
+  gap: 550px;
+  padding: 20px;
 }
-.reviews-one {
-  border: 1px solid rgba(122, 49, 69, 0.3);
-  border-radius: 24px;
-  padding: 20px 16px;
+
+.green-harvest {
+  color: #fbfbfb;
+  position: relative;
+  left: 80px;
 }
-.title {
-  margin-bottom: 8px;
-  text-align: center;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: -0.02em;
-  text-align: center;
-  color: rgba(20, 20, 20, 1);
+
+.page-menu-list {
+  display: flex;
 }
-.title-text {
-  text-align: center;
+
+.page-menu {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.3;
-  color: rgba(20, 20, 20, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.02em;
+  margin-right: 10px;
+  border: 1px solid #fbfbfb66;
+  border-radius: 30px;
+  padding: 12px;
+  color: #fbfbfb;
 }
-@media screen and (min-width: 768px) {
-  .reviews-container {
+
+.shop-now {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.015em;
+  border: 1px solid #7a3145;
+  border-radius: 30px;
+  padding: 12px;
+  color: #fbfbfb;
+  background-color: #7a3145;
+  position: relative;
+  bottom: 12px;
+  cursor: pointer;
+}
+
+.shop-now:hover {
+  background-color: #622133;
+}
+
+.title {
+  max-width: 502px;
+  width: 100%;
+  height: 304px;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 76px;
+  letter-spacing: -0.015em;
+  color: #fbfbfb;
+  position: relative;
+  top: 100px;
+  left: 30px;
+}
+
+.text {
+  max-width: 472px;
+  width: 100%;
+  height: 80px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fbfbfb;
+  position: relative;
+  top: 200px;
+  left: 30px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .container {
     max-width: 768px;
-    padding: 0 32px;
-  }
-  .reviews {
-    padding: 100px 0;
+    width: 100%;
   }
 
-  .reviews-title {
-    font-size: 64px;
-    line-height: 1;
-    margin-bottom: 20px;
+  .header {
+    width: 100%;
+    height: 1024px;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../images/background-image/vegetables-mobile.jpg);
   }
 
-  .reviews-text {
-    font-size: 16px;
-    line-height: 1.25;
+  .header-list {
+    width: 100%;
   }
 
-  .reviews-title-text {
-    width: 553px;
-    margin-bottom: 50px;
+  .header-svg {
+    left: 30px;
   }
 
-  .reviews-list {
-    justify-content: space-between;
+  .menu-mobile {
     display: flex;
-    gap: 18px;
+    position: absolute;
+    right: 30px;
+    top: 32px;
   }
 
-  .reviews-item {
-    max-width: 343px;
-    padding: 20px;
-    width: calc((100% - 18px) / 2);
+  .green-harvest {
+    left: 40px;
   }
 
-  .reviews-item:nth-child(2) {
-    display: flex;
+  .page-menu-list {
+    display: none;
   }
 
   .title {
-    font-size: 18px;
-    line-height: 1.4;
+    max-width: 335px;
+    width: 100%;
+    height: 192px;
+    font-size: 48px;
+    line-height: 48px;
+    top: 40px;
   }
 
-  .title-text {
-    font-size: 16px;
-    line-height: 1.4;
+  .text {
+    max-width: 335px;
+    width: 100%;
+    height: 90px;
+    font-size: 14px;
+    line-height: 18px;
+    top: 100px;
   }
 }
-@media screen and (min-width: 1280px) {
-  @media screen and (min-width: 1280px) {
-    .reviews-container {
-      max-width: 1280px;
-      padding: 0 100px;
-    }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    width: 100%;
   }
-  .reviews-item:nth-child(2) {
+
+  .header {
+    width: 100%;
+    height: 1024px;
+    background-image: linear-gradient(
+        rgba(20, 20, 20, 0.2),
+        rgba(20, 20, 20, 0.2)
+      ),
+      url(../images/background-image/vegetables-tablet.jpg);
+  }
+
+  .header-list {
+    width: 100%;
+  }
+
+  .header-svg {
+    left: 30px;
+  }
+
+  .menu-tablet {
     display: flex;
+    position: absolute;
+    right: 30px;
+    top: 32px;
   }
 
-  .reviews-item:nth-child(3) {
-    display: flex;
-    align-items: center;
+  .green-harvest {
+    left: 40px;
   }
 
-  .reviews-item {
-    width: calc((100% - 50px) / 3);
+  .page-menu-list {
+    display: none;
+  }
 
+  .title {
+    max-width: 704px;
+    width: 100%;
+    height: 228px;
+    font-size: 76px;
+    line-height: 76px;
+    top: 40px;
+  }
+
+  .text {
+    max-width: 603px;
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    line-height: 20px;
+    top: 70px;
   }
 }
